@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>attribute selector</title>
+	<style type="text/css">
+		img[title]{width: 200px;
+		height: 300px;
+		border: 2px double red;
+		border-top-right-radius: 40px;
+		border-bottom-left-radius: 40px;
+	
+	}
+	img[title="allu arjun"]{
+
+		border: 2px double orangered;
+		padding: 10px;
+		}
+	img[title="fazal"]{
+
+		border: 2px double orangered;
+		padding: 10px;
+	}
+	img[title="karri"]{
+
+		border: 2px double orangered;
+		padding: 10px;
+	}
+
+	body{background-color: grey;
+		text-align:center ;
+
+
+	}
+
+</style>
+</head>
+<body>
+	<img src="https://pbs.twimg.com/media/FY2H1jsUEAEvIHh?format=jpg&name=large" title="allu arjun">
+	<img src="https://pbs.twimg.com/media/FfMZ6eQaAAEiJI1.jpg" title="fazal">
+	<img src="https://bl-i.thgim.com/public/companies/9kgabt/article65203813.ece/alternates/FREE_1200/2317_10-7-2019_17-50-39_1_DSC_0104.JPG" title="karri">
+
+</body>
+</html>

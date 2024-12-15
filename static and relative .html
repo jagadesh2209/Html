@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>static and relative</title>
+    <style>
+        .position {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        .static {
+            background-color: coral;
+            position: static;
+        }
+
+        .relative {
+            background-color: black;
+            color: white;
+            position: relative; 
+            right:100px;
+        }
+
+        .absolute {
+            background-color: green;
+            position: absolute;
+            left: 200px;
+        }
+
+        .fixed {
+            background-color: blue;
+            position: fixed;
+            top: 50px;
+            left: 300px;
+        }
+        .sticky{
+        background-color: red;
+        position:sticky;
+        
+        left: 200px;
+         }
+
+        #con {
+            width: 500px;
+            height: 1500px;
+            border: 2px solid red;
+            text-align: center;
+            align-items: center;
+            margin-left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="con">
+        <div class="position static">static</div>
+        <div class="position relative">relative</div>
+        <div class="position absolute">absalute</div>
+        <div class="position fixed">fixed</div>
+        <div class="position sticky">sticky</div>
+    </div>
+
+
+</body>
+
+</html>

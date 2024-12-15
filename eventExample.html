@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: transparent;
+        }
+
+        button {
+            content: '';
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            margin: 20px;
+            border: none;
+            background-color: transparent;
+            position: relative;
+            left: 350px; /* color: white; */
+        }
+
+        button {
+            background: none;
+            border: none;
+            color: inherit;
+            font: inherit;
+            cursor: pointer;
+            padding: 0;
+            position: relative;
+        }
+
+        button::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: currentColor;
+            bottom: -10px;
+              height: 2px; 
+ 
+ }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <button class="btn">Home</button>
+        <button class="btn">Shop</button>
+        <button class="btn">About</button>
+        <button class="btn">Contect</button>
+    </nav>
+
+    <!-- <div>
+        <button>Hellow world</button>
+    </div> -->
+
+
+    <!-- <script>
+        document.getElementsByTagName("button").addEventListener("click",function(){
+            alert("it sme ")
+        })
+    </script> -->
+    <script src="event.js"></script>
+</body>
+
+</html>

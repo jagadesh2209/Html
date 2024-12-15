@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>transitions</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid black;
+        }
+        #ease:hover{
+            background-color: coral;
+            transform: translate(400px);
+             transition-duration:5s ;
+             transition-delay:2s;
+             transition-property: transform 5s;
+            transition-timing-function: ease;
+            
+        }
+        #linear:hover{
+            background-color: coral;
+            transform: translate(400px);
+             transition-duration:5s ;
+             transition-delay: 2s;
+             transition-property: transform 5s;
+            transition-timing-function: linear;
+            
+        } #ease-in:hover{
+            background-color: coral;
+            transform: translate(400px);
+             transition-duration:5s ;
+             transition-delay: 2s;
+             transition-property: transform 5s;
+            transition-timing-function: ease-in;
+            
+        } #ease-out:hover{
+            background-color: coral;
+            transform: translate(400px);
+             transition-duration:5s ;
+             transition-delay: 2s;
+             transition-property: transform 5s;
+            transition-timing-function: ease-out;
+            
+        } #ease-in-out:hover{
+            background-color: coral;
+            transform: translateY(400px);
+             transition-duration:5s ;
+             transition-delay:2s;
+             transition-property: transform 5s;
+            transition-timing-function: ease-in-out;
+            
+        }
+        #pj{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            left: 500px;
+            top: -400px;
+            margin: 0;
+            padding: 0;
+            /* background-color: red; */
+        }
+        
+        #ease-in-out:hover{
+            width: 200px;
+            height: 100px;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            transform: translateY(400 px);
+             transition-duration:5s ;
+             transition-delay:2s;
+             transition-property: transform 5s;
+            transition-timing-function: ease-in-out;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="ease"></div>
+    <div id="linear"></div>
+    <div id="ease-in"></div>
+    <div id="ease-out"></div>
+    <div id="ease-in-out"></div>
+    <div id="pj">
+        <div id="ease-in-out"></div>
+    </div>
+</body>
+</html>
